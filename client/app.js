@@ -6,8 +6,8 @@ angular.module('sendmailApp', [])
   $scope.send = function (mail){
     $scope.loading = true;
     $http.post('/sendmail', {
-      from: 'CodeNx <admin@angularcode.com>',
-      to: 'support@codenx.com',
+      from: 'CodeNx <karuna.puri@springernature.com>',
+      to: 'karuna.puri@springernature.com',
       subject: 'Message from AngularCode',
       text: mail.message
     }).then(res=>{
